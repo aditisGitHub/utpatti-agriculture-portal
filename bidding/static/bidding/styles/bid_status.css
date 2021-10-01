@@ -1,0 +1,31 @@
+.eachBid {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bid-name {
+    flex-basis: 3;
+    color: rgb(48, 172, 48);
+    font-size: small;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.bid-price {
+    flex-basis: 1;
+    color: rgb(1, 51, 1);
+}
+
+.bid-time {
+    flex-basis: 2;
+    color: rgb(124, 140, 156);
+}
+
+.bid-btn {
+    background-color: rgb(1, 51, 1);
+    border-radius: 2.5em;
+    padding: 5px;
+    margin: auto;
+    color:seashell;
+}

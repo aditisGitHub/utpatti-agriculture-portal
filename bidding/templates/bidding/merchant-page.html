@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'bidding/styles/view_bids.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    HI MERCHANT 
+    See the bids - 
+    <div class="allBids">
+        {% for b in active_bids_crops %}
+            <div class="bid-head">
+                <a href="{% url 'viewBid' curr_m b.bid_for_crop %}">
+                <p>{{ b.qty_grown }} quantity of <b>{{ b.crop_name }}</b> | {{ b.crop_type }} grown by {{ b.grown_by }}</p>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

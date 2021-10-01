@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bids</title>
+</head>
+<body>
+    <h1>VIEW BIDDING STATUS FOR {{ selected_bid }}</h1>
+    {% for e in bid_status %}  
+    <div class="eachBid">
+        <div class="bid-name">
+            {{ e.merchant_bidding.adhr_no }}
+        </div>
+        <div class="bid-price">
+            {{ e.bid_price }}
+        </div>
+        <div class="bid-time">
+            {{ e.bid_time }}
+        </div>
+    </div>
+    {% endfor %}
+    <div class="eachBid">
+        <form method="post">
+            {% csrf_token %} 
+            <p>
+                {{ bid_entry_form.as_p }}
+                <input type="submit" class="bid-btn" value="Bid">
+            </p>
+        </form>
+
+    </div>
+</body> 
+</html>

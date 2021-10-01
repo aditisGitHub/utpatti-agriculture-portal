@@ -1,0 +1,21 @@
+.bidForm {
+    width: 40%;
+    margin: auto;
+    padding: 0.1em;
+    border: 3px solid rgb(1, 51, 1);
+    border-radius: 1em;
+    box-shadow: 5px 5px 5px seashell;
+}
+
+.bid-btn-container {
+    margin: auto;
+}
+
+.bid-btn {
+    background-color: rgb(1, 51, 1);
+    border-radius: 2.5em;
+    padding: 5px;
+    margin: auto;
+    color:seashell;
+}
+

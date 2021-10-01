@@ -1,0 +1,40 @@
+.allBids {
+    padding: 0.1em;
+    box-shadow: 7px 0px 5px rgb(246, 250, 235);
+    margin: auto;
+    width: fit-content;
+    
+}
+
+.bid-head {
+    margin-bottom: 2%;
+    padding: 0.3%;
+    width: fit-content;
+    white-space: nowrap;
+    border-bottom: 5px solid rgb(248, 248, 242)
+}
+
+.bid-head p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: medium;
+    color:rgb(1, 51, 1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color:rgb(1, 51, 1);
+    text-decoration: none;
+}
+
+a:visited {
+    color:rgb(1, 51, 1);
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(2, 255, 2);
+
+}
+
+
